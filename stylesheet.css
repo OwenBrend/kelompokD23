@@ -6,3 +6,18 @@ body{
 a{
 	text-decoration: none;
 }
+li {
+  color: black;
+  padding: 25px;
+}
+
+.navbar-header {
+  margin-top: 10px;
+}
+
+.header {
+  background-color: white;
+  height: 100px;
+}
+
+
