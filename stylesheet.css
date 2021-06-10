@@ -3,21 +3,71 @@ body{
 	font-family: "Roboto" ;
 }
 
-a{
-	text-decoration: none;
-}
-li {
-  color: black;
-  padding: 25px;
-}
+* {
+    box-sizing: border-box;
+  }
 
-.navbar-header {
-  margin-top: 10px;
-}
+  .main {
+    margin: 50px;
+  }
+  a {
+    float: right;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -15px;
+    color: black;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: black;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: black;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button2 {background-color: #008CBA;} /* Blue */
+  .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
 
-.header {
-  background-color: white;
-  height: 100px;
-}
+  
+
 
 
