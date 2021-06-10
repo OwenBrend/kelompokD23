@@ -4,4 +4,4 @@
 - Rifqi Taufiqurrohman
 - Wahidin Deni Kurniawan
 - Nita Atriana
-- Ridwan
+- Ridwan Bahtiar
