@@ -1,73 +1,271 @@
-body{
-	margin: 0;
-	font-family: "Roboto" ;
+*{
+  box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-  }
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+  background-color: #F6F6F6;
+}
 
-  .main {
-    margin: 50px;
-  }
-  a {
-    float: right;
-  }
+a {
+  text-decoration: none;
+}
+
+.clear{
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*Untuk header */
+
+header {
+  height: 75px;
+  width: 100%;
+  background-color: rgba(253, 253, 253, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 42px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
+
+.header-right a{
+  line-height: 42px;
+  padding: 0 35px;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  margin: 20px 15px;
+  border-radius: 100px;
+}
+
+.login{
+  background-color: rgba(237, 237, 237, 1.0);
+    color: #34364A;
+    border: 1px solid #157dfe;
+}
+
+.login:hover {
+  background-color: rgba(237, 237, 237, 0.7);
+}
+
+.signup{
+  background-color: rgba(21, 125, 254, 1.0);
+  color: #EDEDED;
+}
+
+.signup:hover {
+  background-color: rgba(21, 125, 254, 0.7);
+}
+
+/*main*/
+
+.top-wrapper{
+  padding: 180px 0 120px 0;
+  background-image: url(https://i.postimg.cc/pdf5cN2Z/backr.jpg);
+  background-size: cover;
   
-  .container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-  }
+}
+
+.top-wrapper h1{
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #34364A ;
   
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: white;
-    top: 0;
-    z-index: 10;
-    padding: 20px;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  .header-right {
-    float: right;
-    margin-right: -15px;
-    color: black;
-  }
-  
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: black;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  .header-right a:hover {
-    background-color: black;
-  }
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+  color: #34364A ;
+  font-size: 18px;
+  font
+}
+
+.btn{
+  padding: 12px 32px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 100px;
+}
+.daftar{
+  background-color:rgba(21, 125, 254, 1.0) ;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.daftar:hover{
+  background-color:rgba(21, 125, 254, 0.8)
+}
+.catalog{
+  background-color: rgba(237, 237, 237, 1.0) ;
+  color: #34364A;
+  border: 2px solid #157dfe;
+}
+
+.catalog:hover{
+  background-color: rgba(237, 237, 237, 0.8)
+}
+
+.lesson-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color:#f7f7f7 ;
+}
+
+.lesson-wrapper-bottom {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color:#f7f7f7 ;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 15px;
+  color: #34364A;
+}
+
+.heading h2 {
+  font-weight: bold;
+}
+
+.lesson{
+  float: left;
+  width: 23%;
+  height: 230px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 10px 20px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.lesson-icon{
+  position: relative;
+}
+
+.lesson-icon img{
+  width: 80px;
+}
+
+.text-contents{
+  font-size:18px;
+  font-weight:bold;
+  margin-top :25px;
+  margin-bottom:15px;
+  color: #35364A;
+}
+
+.text-detail {
+  font-weight:lighter;
+  color:#7C7D82;
+  margin:0 10px 20px 10px;
+  padding: 0 20px 20px 20px;
+}
+
+
+/*message */
+
+.message-wrapper {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.message{
+  background-color:rgba(21, 125, 254, 1.0);
+  color: #EDEDED;
+    padding: 15px 40px;
+    margin-top:12px;
     cursor: pointer;
-  }
-  
-  .button2 {background-color: #008CBA;} /* Blue */
-  .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+    box-shadow: 0 7px #0E478E;
+}
+.message:hover{
+  background-color:rgba(21, 125, 254, 0.8);
+}
+.message:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
 
-  
+footer{
+  padding: 10px 0 160px 0;
+  text-align: center;
+  background-color: white;
 
+}
+.footer-wrapper{
+  width: 33%;
+  float: left;
 
+}
 
+.footer-detail a{
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: lighter;
+  color:#35364A ;
+}
+
+.footer-detail a:hover{
+  color:#157DFE ;
+}
+
+.footer-title h4{
+  font-size: 20px;
+  font-weight: bold;
+  color:#35364A ;
+}
+
+/*animasi*/
+.top-wrapper h1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.top-wrapper p {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example{
+  from {left: -100px;}
+  to{left: 0px;}
+}
+
+.btn-wrapper{
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes example2{
+  from {left: -100px;}
+  to{left: 0px;}
+}
